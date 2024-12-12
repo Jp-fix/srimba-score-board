@@ -1,31 +1,73 @@
-body {
+body.cyberpunk-bg {
     margin: 0;
-    background-color: #D97706;
+    background-color: #0a0a0a;
+    background-image: linear-gradient(to bottom, #0a0a0a, #1a1a1a);
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
 }
-h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+h3.team-title {
     font-size: 26px;
     text-align: center;
     margin-bottom: -20px;
 }
-#homescore,#guestscore{
-    font-family:'Courier New', Courier, monospace;
+
+p.team-score {
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    background-color: black;
-    color: red;
+    background-color: #0a0a0a;
+    color: #00ff00;
     padding: 20px;
     margin-bottom: 15px;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
-#btn-reset{
+
+.team-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.team-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-cyberpunk {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    padding: 10px 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-cyberpunk:hover {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#btn-reset {
     display: block;
     margin-left: auto;
     margin-right: auto;

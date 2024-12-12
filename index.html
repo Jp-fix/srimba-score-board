@@ -2,26 +2,30 @@
     <head>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+    <body class="cyberpunk-bg">
         <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <p id="homescore">0</p>
-                <button onclick="plusOnePointHome()">+1</button>
-                <button onclick="plusTwoPointHome()">+2</button>
-                <button onclick="plusThreePointHome()">+3</button>
+            <div class="team-card">
+                <h3 class="team-title">HOME</h3>
+                <p id="homescore" class="team-score">0</p>
+                <div class="team-buttons">
+                    <button class="btn-cyberpunk" onclick="plusOnePointHome()">+1</button>
+                    <button class="btn-cyberpunk" onclick="plusTwoPointHome()">+2</button>
+                    <button class="btn-cyberpunk" onclick="plusThreePointHome()">+3</button>
+                </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
-                <p id="guestscore">0</p>
-                <button onclick="plusOnePointGuest()">+1</button>
-                <button onclick="plusTwoPointGuest()">+2</button>
-                <button onclick="plusThreePointGuest()">+3</button>
+            <div class="team-card">
+                <h3 class="team-title">GUEST</h3>
+                <p id="guestscore" class="team-score">0</p>
+                <div class="team-buttons">
+                    <button class="btn-cyberpunk" onclick="plusOnePointGuest()">+1</button>
+                    <button class="btn-cyberpunk" onclick="plusTwoPointGuest()">+2</button>
+                    <button class="btn-cyberpunk" onclick="plusThreePointGuest()">+3</button>
+                </div>
             </div>
         </div>
-        <div>
-            <button id="btn-reset" onclick="reset()">New Game</button>
-        </div> 
+        <div class="reset-container">
+            <button id="btn-reset" class="btn-cyberpunk" onclick="reset()">New Game</button>
+        </div>
         <script src="index.js"></script>
     </body>
 </html>
